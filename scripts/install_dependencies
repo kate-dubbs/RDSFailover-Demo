@@ -1,0 +1,5 @@
+#!/bin/bash
+yum install httpd php mysql -y
+cd /var/www/html
+curl -sS https://getcomposer.org/installer | php
+php composer.phar require aws/aws-sdk-php
